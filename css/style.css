@@ -1,0 +1,43 @@
+.container{
+background-color: white;
+display: flex; 
+}
+.zero{
+    font-weight: bold;
+    font-size: 25px;
+}
+.first{
+    color: blue;
+}
+.first:hover{
+    color: darkblue;
+}
+.second{
+    color: blue;
+}
+.discount{
+    color: red;
+    font-size: 20px;
+}
+.third{
+    color: black;
+    font-weight: bold;
+}
+.third span{
+    color: orangered;
+    font-weight: bold;
+}
+.price{
+ font-weight: bold;
+ font-size: 25px;
+}
+
+.fourth{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+}
+.offers{
+    object-fit: contain;
+    display: inline-block;
+}
