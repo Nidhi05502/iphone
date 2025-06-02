@@ -1,43 +1,530 @@
-.container{
+ .container{
 background-color: white;
 display: flex; 
+width: 100%;
 }
-.zero{
-    font-weight: bold;
-    font-size: 25px;
+section{
+    border-bottom: 1px solid;
+}
+.image{
+   width: 100%; 
+}
+.image img{
+    margin-top: 0px;
+}
+.share{
+    margin-left: 450px;
+    margin-top: 30px;
+}
+.content h1{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.content p :hover{
+    color: blue;
+    text-decoration: underline;
+}
+.content p{
+    color: blue;
+    margin-bottom: 0px;
+    font-size: 13px;    
+}
+.rating p :hover{
+    color: blue;
+    text-decoration: underline;
 }
 .first{
-    color: blue;
-}
-.first:hover{
+    display: flex;
+    gap:15px;
     color: darkblue;
+    font-size: 13px;
 }
-.second{
-    color: blue;
+.icon{
+    margin-top: 12px;
+    color:black; 
 }
-.discount{
-    color: red;
-    font-size: 20px;
+.check{
+    color: orange;
 }
-.third{
-    color: black;
-    font-weight: bold;
+.rating{
+    gap:30px
 }
-.third span{
-    color: orangered;
-    font-weight: bold;
+h4{
+    font-weight: normal;
+    margin-top: 0px;
+    font-size: 13px;
 }
-.price{
- font-weight: bold;
- font-size: 25px;
+h4 span{
+    font-weight: bolder;
 }
 
-.fourth{
+.logo img{
+    margin-top: 0px;
+    width:20%;
+}
+
+.info h2{
+    color:red;
+    font-size: 20px;
+   
+}
+ h2 span{
+    font-size: 25px;
+    color: black;
+}
+h2 .sign{
+    color:black;
+    font-size: medium; 
+}
+
+.info h3{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: black;
+
+}
+
+
+h3 span{
     text-decoration: line-through;
-    font-size: 14px;
-    color: gray;
 }
-.offers{
-    object-fit: contain;
-    display: inline-block;
+.content .emi {
+    color:black;
+    line-height:0rem;
+    font-size: 13px;
 }
+
+.content .emi span{
+    font-weight: bold;
+}
+
+.content .emi .bold{
+    color:blue;
+}
+
+
+.offer{
+    display: flex;
+    
+}
+.offer img{
+    margin-top:25px;
+    width: 20%;
+    height:40%;
+}
+.offer p{
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bolder;
+    margin-inline-start: -60px; 
+}
+
+.third{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+  
+}
+.fourth{
+    border:2px solid gainsboro;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.content .fourth span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content .fourth p{
+    color: black;
+    font-size: 13px;
+}
+.fourth .bold {
+    color: #0000ff;
+   
+}
+
+.fourth .bold .arrow{
+    color: black;
+}
+.delivery{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-bottom: 20px;
+    gap: 10px;
+   
+}
+.delivery img{
+    width: 35%;
+    margin-top: 15px;
+    
+}
+.color h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.var img{
+    width: 85px;
+}
+
+.var {
+    display: flex;
+    gap: 10px;
+
+}
+.var .variety{
+    border: solid 1px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+.variety-img{
+    border-bottom: solid 1px;
+}
+.variety-img img{
+    width: 85%;
+}
+.variety-des{
+    margin-top: 8px;
+}
+.variety-des span{
+    color: red;
+    font-size: 15px;
+}
+.variety-des .line span{
+    text-decoration: line-through;
+    font-size: 13px;
+    color: black;
+}
+ 
+.size span{
+    font-size: medium;
+}
+.size h2{
+    font-size:medium;
+    color: black;
+   
+}
+.memory p{
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    height:22px;
+    padding: 3px;
+    margin-top:0px;
+   
+}
+.memory{
+    display: flex;
+    gap: 20px;
+    width: 300px;
+}
+.features {
+    display: flex;
+    gap:30px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+   
+}
+ 
+.features .name p{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+.features .feature p{
+    color: black;
+}
+.features .feature h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    
+}
+.about h3{
+    font-size: 17px;
+    color: black;
+    
+}
+.about li{
+    color: black;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-inline-start: 2px;
+}
+.about{
+    border-bottom: 0px;
+}
+.report-issue{
+ display: flex;
+ align-items: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ font-family: sans-serif;
+}
+.report-issue img{
+ width: 35px;
+ height: 25px;
+ margin-right: 10px;
+}
+.report-issue a{
+ font-size: 13px;
+ text-decoration: none;
+ color: #2c609c;
+}
+.report-issue a:hover{
+ text-decoration: underline;
+ color: darkblue;
+}
+.emi-sec{
+    display: flex;
+    align-items: center ;
+}
+ 
+.emi-list{
+    border:1px solid lightgray;
+    padding: 5px;
+    border-radius: 7px;
+}
+.emi-list h3{
+    font-size: 15px;
+}
+.tabs{
+    display: flex;
+    gap:40px;
+    
+}
+.tabs .tab{
+    font-size: 13px;
+}
+.cont{
+    border:1px solid;
+    margin: 5px;
+   
+}
+.cont h3{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.cont p{
+    color: black;
+}
+.emi-list h3{
+   padding-left: 5px;
+}
+.tabs{
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px;
+}
+#paylater{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid;
+}
+#debitcard{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.tabs :hover{
+    color: blue;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table th{
+    background-color: lightgray;
+    padding: 5px;
+    font-size: 13px;
+}
+table td{
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+    font-size: 13px;
+}
+ul{
+    padding: 5px;
+    font-size: 13px;
+}
+.cont li{
+    font-weight: normal;
+    padding: 5px;
+    font-size: 12px;
+}
+ 
+.greeting{
+    background-color: lightpink;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    padding-top: 5px;
+}
+.greeting h3{
+    color: orange;
+    text-align: left;
+   
+}
+.greeting p{
+    font-weight: normal;
+}
+.toggle{
+    background-color: lightgray;
+    padding-left: 5px;
+    height:30px;
+    display:flex;
+    gap: 50px;
+    border-top: solid 1px lightgrey;
+    
+}
+.switch {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 60px;
+}
+ 
+.switch input {
+  display:none;
+}
+.slider {
+  background-color: blue;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+ 
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+}
+ 
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+ 
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+ 
+.slider.round {
+  border-radius: 34px;
+margin-top: 7px;
+height:22px;
+width: 46px;
+}
+ 
+.slider.round:before {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+
+ 
+.card{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 10px;
+    position: relative;
+}
+
+.card h3{
+    margin-bottom:-5px;
+    font-size: 13px;
+    margin-top: 13px;
+}
+.card p{margin-bottom: 10px;
+color: red;
+font-size: 12px;
+text-align: center;}
+
+.dropbtn{
+    margin-top: 30px;
+    border: none;
+    background: none;
+}
+.drpbtn{
+    background: none;
+    border: none;
+    font-size: 13px;
+}
+.dropdown .dropbtn img{
+    height: 20px;
+    width: 20px;
+    
+ 
+}
+ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #f9f9f9;
+  width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  justify-content: center;
+}
+.dropdown-content h3{
+    margin-bottom: 4px;
+}
+.emi-table th{
+    text-align: left;
+    color: darkslategray;
+    background-color: lightgray;
+}
+
+ 
+.show {
+  display: block;
+}
+ 
+.notes li{
+padding: 5px;
+margin-left: 20px;
+}
+.notes h3{
+    font-weight: normal;
+    font-size: 13px;
+}
+.notes a{
+    font-weight: normal;
+    color: blue;
+    font-size: 10px;
+    margin-inline-start: 40%;
+   
+   
+}
+.emi-option{
+    border-bottom: 0px;
+}
+.card{
+    display: flex;
+    gap: 50px;
+}
+.card img{
+    width: 50px;
+    margin-top: 15px;
+
+}
+
+ 
