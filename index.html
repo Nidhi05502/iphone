@@ -7,6 +7,8 @@
    <title>iPhone 16 pro </title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -51,14 +53,17 @@
 
             <h3>M.R.P.:<i class="fa fa-rupee"></i><span>1,29,900</span></h3>
             <div class="emi-sec">
-            <p class="emi">Inclusive of all taxes</p>
+            <p class="emi">Inclusive of all taxes </p>
             <p class="emi"><span>EMI</span> starts at ₹5,958. No Cost EMI available</p>
-               <!-- <span class="bold"> EMI
-                  options</span><i class="fa fa-sort-desc" aria-hidden="true"></i></p> -->
+
+            <div class="emi-options">
               <button class="drpbtn" id="drpbtn" onclick="emidropbtn()">EMI Options <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
-            </div>
-             <div id="dropdown-emi" hidden>
+            
+             <div id="dropdown-emi">
                <h3>EMI Options</h3>
+               <button class="close-button" aria-label="Close alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+             </button>
                <div class="tab-body">
  
                   <div class="tabs">
@@ -66,7 +71,7 @@
                      <button role="tab" aria-selected="false" id="debitcard">Debit Card EMI</button>
                   </div>
    
-                  <div class="cont" role="tabpanel"  aria-labelledby="paylater" >
+                  <div class="cont" role="tabpanel"  aria-labelledby="paylater" >  
                   <h3>Standard Plans</h3>
                   <table class="emi-table"> 
                      <tr>
@@ -177,6 +182,9 @@
               </div>
                </div>
             </div>
+            </div>
+            </div>
+            
 
             <div class="offer">
                <div>
@@ -189,6 +197,8 @@
 
 
             <div class="third">
+               <!-- <div class="slide">
+               <div class="swiper"> -->
                <div class="fourth">
                   <span>Bank Offer</span>
                   <p>Upto ₹3,000.00 discount on selected Credit Cards</p>
@@ -204,7 +214,18 @@
                   <p>Upto ₹2000.00 cashaback at Amazon Pay Balance</p>
                   <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
                </div>
+               <div class="fourth">
+                  <span>Partnr Offers</span>
+                  <p>Upto ₹2000.00 cashaback at Amazon Pay Balance</p>
+                  <span class="bold">1 offer <i class="fa fa-angle-right arrow" aria-hidden="true"></i></span>
+               </div>
             </div>
+            
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+               </div>
+            </div>
+          -->
 
 
             <div class="delivery">
@@ -286,25 +307,25 @@
                </div>
             </div>
 
-
-            <div class="size">
+            <!-- <div class="size">
                <h2>Size:<span>256GB</span></h2>
+            </div> -->
+<!-- 
+            <div class="memory"> -->
+                <div class="size">
+               <h2>Size:<div id="selected-size">128 GB</div></h2>
+               <div id="size-options">
+                  <button class="size-button active"
+                  data-size="128 GB">128 GB</button>
+                  <button class="size-button"
+                  data-size="256 GB">256 GB</button>
+                  <button class="size-button"
+                  data-size="512 GB">512 GB</button>
+                  <button class="size-button"
+                  data-size="1 TB">1 TB</button>
+               </div>
             </div>
-
-            <div class="memory">
-               <div>
-                  <p>1 TB</p>
-               </div>
-               <div>
-                  <p>128 GB</p>
-               </div>
-               <div>
-                  <p>256 GB</p>
-               </div>
-               <div>
-                  <P>512 GB</P>
-               </div>
-            </div>
+            <!-- </div> -->
 
             <div class="features">
                <div class="name">

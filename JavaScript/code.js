@@ -47,9 +47,38 @@ function tabclickhandler(event){
   tabpanel.hidden=false;
  
 }
- 
 tabButtons.forEach(button => button.addEventListener("click",tabclickhandler));
 
-
-
  
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+    spaceBetween: 10,
+    loop: false,
+   
+    flipEffect: {
+      slideShadows: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+   
+  direction: 'horizontal',
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+
+
+
+    const buttons = document.querySelectorAll('.size-button');
+    const selectedSizeText = document.getElementById('selected-size');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const size = button.getAttribute('data-size');
+        selectedSizeText.textContent = `You selected: ${size}`;
+      });
+    });
